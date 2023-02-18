@@ -9,6 +9,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
 import Common from "./common";
+import Image from 'react-bootstrap/Image'
 const BASE_URL = Common.API_URL;
 export default class report extends Component {
   state = {
@@ -65,7 +66,10 @@ export default class report extends Component {
           <Container>
             <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์ เปลี่ยนแปลง</Navbar.Brand>
             <div style={{fontSize:"22px" ,color:"#ffffff"}}>
-              65130460 กมลรัชต์ สงวนหมู่
+              <Image src="https://scontent.fbkk15-1.fna.fbcdn.net/v/t39.30808-6/275614126_338640824877619_8259745734031296831_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_h3UZsf-SzQAX9ApCtr&_nc_ht=scontent.fbkk15-1.fna&oh=00_AfDc7xHrV9H6PoC-WEpqnEcAhtaU1VHqCxKxred9BYB-hA&oe=63F5021C" 
+              roundedCircle thumbnail style={{width:"45px" ,height:"45px"}}/>
+
+              {" "} 65130460 กมลรัชต์ สงวนหมู่
             </div>
           </Container>
         </Navbar>
